@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --bg-color: #000000;
+    --bg-text: #FFFFFF;
+}
+
+body {
+    background-color: var(--bg-color);
+    background-image: url("./img/dor-de-cabeca.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 80px;
+    align-items: center;
+
+    & nav {
+        display: flex;
+        gap: 30px;
+
+        & a {
+            color: var(--bg-text);
+        }
+    }
+
+    & .icons {
+        color: var(--bg-text);
+        display: flex;
+        gap: 17px;
+    }
+}
